@@ -9,15 +9,16 @@ description: "This sample creates a multi-container application in an Azure Kube
 ---
 # GitHub Demo Day
 
-This demo is part of the GitHub Demo Day sessions hosted weekly! 
-- [Demo Days - From A(KS) to Z, automate your workflows with GitHub!](https://www.linkedin.com/events/demodays-keepcalmanddevopson6838532958866022401/)
-- Friday - Sep 10, 2021
+This demo is a cloned from the GitHub Demo Day sessions hosted on Sep 10, 2021! 
+- [Demo Days - From A(KS) to Z, automate your workflows with GitHub!](https://www.youtube.com/watch?v=lLGzd36x3Ho&t=2s)
 
 We will use this repo to see how GitHub can simplify security, automation, container management, K8s deployments and more!
 
 ## Prerequisites
 
-1. This demo requires 3 secrets to be generated:
+1. Create the Azure K8S Cluster in Azure in a resource group. Generate the SP Creds using the below suggestion
+
+2. This demo requires 4 secrets to be generated:
 
 | Secret Name | Value Required |
 |-------------      |--------------- |
@@ -25,6 +26,9 @@ We will use this repo to see how GitHub can simplify security, automation, conta
 |AKS_CLUSTER_RESOURCE_GROUP           | Resource Group that contains the AKS Cluster  |
 |AZURE_SERVICE_PROVIDER_CREDENTIALS   | SP with permission to access the Azure Resource Group |
 |GH_ENV_PAT                           | PAT with repo admin access | 
+
+3. If you'd like to try this out yourself, ensure that the following files have been modified to represent your repository. Replace references to OWNER/REPO-NAME to your repo.
+`docker-compose.yaml` and `deployment.yml`
 
 ### Generate Azure Service Principal
 To deploy to Azure you will need to create a service principal. You can do that with the following command:
