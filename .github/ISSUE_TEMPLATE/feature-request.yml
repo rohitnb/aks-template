@@ -4,8 +4,6 @@ title: "Feature Request"
 description: Create a Demo repository and associated cloud resources
 labels:
   - enhancement
-assignees:
-  - james-leha
 
 body:
   - type: dropdown
